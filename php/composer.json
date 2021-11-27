@@ -1,0 +1,17 @@
+{
+    "name": "taydh/datahalt-client-sample",
+    "authors": [
+        {
+            "name": "taydh",
+            "email": "taydh@users.noreply.github.com"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+            "Taydh\\": "lib/Taydh/"
+        }
+    },
+    "require": {
+		"sonata-project/google-authenticator": "^2.2"
+	}
+}
