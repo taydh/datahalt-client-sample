@@ -1,5 +1,7 @@
 {
     "name": "taydh/datahalt-client-sample",
+	"description": "Client application sample that consume taydh/datahalt server",
+	"license": "Apache-2.0",
     "authors": [
         {
             "name": "taydh",
@@ -13,5 +15,8 @@
     },
     "require": {
 		"sonata-project/google-authenticator": "^2.2"
+	},
+	"scripts": {
+		"test": "php test/github-actions/001.php"
 	}
 }
