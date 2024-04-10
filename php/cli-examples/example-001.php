@@ -1,18 +1,19 @@
 <?php
-// Basic:
-// Make authentication and perform queries with DataHalt server
+// Description:
+// Make authentication and perform simple queries with DataHalt server
 // 
 // Please change and check config variable below accordingly
-//
+// 
 // run from command line > php example-001.php
 
 require('../vendor/autoload.php');
 
+$baseUrl = 'http://localhost:8000'; // datahalt server base url
 $config = [
-	'authURL' => 'http://localhost:8000/auth.php', // datahalt server
-	'queryURL' => 'http://localhost:8000/query.php', // datahalt server 
-	'clientId' => 'client001_5e065a976391b46f', // as set up in datahalt-server configuration clientId
-	'otpKey' => 'bb60142201dfa04d47901bfbfcd2c2e0', // as set up in datahalt-server client settings
+	'authURL' => $baseUrl . '/auth.php', // datahalt authentication endpoint
+	'queryURL' => $baseUrl . '/query.php', // datahalt query endpoint
+	'clientId' => 'client001_5e065a976391b46f', // see datahalt (server) client settings
+	'otpKey' => 'bb60142201dfa04d47901bfbfcd2c2e0', // see datahalt (server) client settings
 ];
 
 ////////////// 1. Authenticate ////////////////////////
